@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/gato.png"/>
+
+    <!-- Estilos-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/query.css">
+
+    <title>Gato_RLPC</title>
+</head>
+
+<body>
+    <main>
+        <!-- <header id="banner"></header> -->
+        <!-- Score -->
+        <section id="score">
+            <form action="" id="Puntuacion">
+                <label for="">Lugador1 score:</label>
+                <label for="" id="ScoreJ1">P1#</label>
+                <label for="" >Turno: </label>
+                <label for="" id="turn">turn</label>
+                <label for="">Lugador2 score:</label>
+                <label for="" id="ScoreJ2">P1#</label>
+            </form>
+        </section>
+        <!-- Area de juego -->
+        <section id="area">
+            <!-- Jugador 1 -->
+            <article id="p1">
+                <form action="" id="FormJ1">
+                    <label for="">Jugador 1</label>
+                    <br>
+                    <input type="text" name="" id="J1name" placeholder="Jugador1">
+                    <br>
+                    <input type="radio" name="1" id="" value="X_J1"><label for="">X</label>
+                    <br>
+                    <input type="radio" name="1" id="" value="0_J1"><label for="">0</label>
+                    <br>
+                    <input type="button" value="Ingresar">
+                </form>
+            </article>
+            
+            <!-- Tablero -->
+            <article id="tablero">
+                <form action="" id="Game">
+                    <canvas></canvas>
+                </form>
+            </article>
+
+            <!-- Jugador 2 -->
+            <article id="p2">
+                <form action="" id="FormJ2">
+                    <label for="">Jugador 2</label>
+                    <br>
+                    <input type="text" name="" id="J2name" placeholder="Jugador2">
+                    <br>
+                    <input type="radio" name="1" id="" value="X_J2"><label for="">X</label>
+                    <br>
+                    <input type="radio" name="1" id="" value="0_J2"><label for="">0</label>
+                    <br>
+                    <input type="button" value="Ingresar">
+                </form>
+            </article>
+        </section>
+
+        <!-- Botones -->
+        <section id="btns">
+            <form action="">
+                <input type="button" value="Jugar">
+                <input type="button" value="Reiniciar">
+            </form>
+        </section>
+        <!-- <footer id="pie"></footer> -->
+    </main>
+
+</body>
+</html>
+

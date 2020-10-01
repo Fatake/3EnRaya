@@ -1,0 +1,45 @@
+#query{    
+    background-color:#35435C;
+    text-align:center;
+    color:#fff;
+    width: 300px;
+}
+
+@media screen and (max-width: 600px) {
+    #query:after{
+        content: " max-widqueryth: 600px";
+    }
+    #lego1 {
+        display: none;
+    }
+    #lego2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1199px) {
+    #query:after{
+        content: " min-width: 601px & max-width: 1199px";
+    }
+    #query{
+        width: 500px;
+    }
+    #lego1 {
+        display: none;
+    }
+    #lego3 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #query:after{
+        content: " min-width: 1200px";
+    }
+    #lego2 {
+        display: none;
+    }
+    #lego3 {
+        display: none;
+    }
+}
