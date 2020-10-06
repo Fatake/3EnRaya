@@ -9,10 +9,10 @@
     #query:after{
         content: " max-widqueryth: 600px";
     }
-    #lego1 {
+    #espada1,#escudo1 {
         display: none;
     }
-    #lego2 {
+    #espada2,#escudo2 {
         display: none;
     }
 }
@@ -24,10 +24,10 @@
     #query{
         width: 500px;
     }
-    #lego1 {
+    #espada1,#escudo1 {
         display: none;
     }
-    #lego3 {
+    #espada3,#escudo3{
         display: none;
     }
 }
@@ -36,10 +36,10 @@
     #query:after{
         content: " min-width: 1200px";
     }
-    #lego2 {
+    #espada2,#escudo2 {
         display: none;
     }
-    #lego3 {
+    #espada3,#escudo3{
         display: none;
     }
 }
