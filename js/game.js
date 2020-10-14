@@ -1,4 +1,3 @@
-var ngato = document.querySelector('#n_gato');
 var btnAcept = document.querySelector('#btnacept');
 var circle;
 var canvas = document.getElementById("gato");
@@ -58,10 +57,10 @@ function posicion(){
  * Funcion que Dibuja el tablero
  */
 function dibujaGato(){
-    var n= parseInt(ngato.value);
+    var n = 3;
     tamC = Math.round(maxx/n);
-    var i=0;
-    for (i=1;i<n;i++){
+    var i = 0;
+    for (i = 1; i < n ; i++){
         ctx.beginPath();
         ctx.moveTo(i*tamC, 0);
         ctx.lineTo(i*tamC, maxy);

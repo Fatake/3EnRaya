@@ -29,7 +29,7 @@
                 <label for="" id="ScoreJ2">P1#</label>
             </form>
         </section>
-        
+
         <!-- Area de juego -->
         <section id="area">
             <!-- Jugador 1 -->
@@ -54,10 +54,12 @@
                 </form>
             </article>
             
+
+            
             <!-- Tablero -->
-            <article id="tablero">
+            <article id="tablero">           
                 <form action="" id="Game">
-                    <canvas></canvas>
+                    <canvas id="gato" width="600" height="600" style="border:1px solid #d3d3d3" onmousedown="posicion()">gato</canvas>
                 </form>
             </article>
 
@@ -83,11 +85,20 @@
                 </form>
             </article>
         </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
         <!-- Botones -->
         <section id="btns">
             <form action="">
-                <input type="button" class="bt" value="Jugar">
+                <input type="button" class="bt" id="btnacept" value="Jugar" onclick="dibujaGato()">
                 <input type="button" class="bt" value="Reiniciar">
             </form>
         </section>
