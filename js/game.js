@@ -123,7 +123,7 @@ function pintaFicha(valor){
 }
 
 /**
- * Mensajes
+ * Escribe debajo de tablero un mensaje
  * @param {*} cadena 
  */
 function mensaje(cadena){
@@ -154,7 +154,6 @@ function selecciona(e){
         }
     }
     if(i<fichas_array.length){
-        console.log(i);
         if(ficha.valor == ""){
             ficha.pinta("X");
             verifica(false);
@@ -185,7 +184,7 @@ function ajusta(xx,yy){
  */
 function tiraMaquina(){
     tiradas++;
-    console.log("Tirada numero: "+tiradas);
+
     if(gameOver == false){
         verifica(true);
         //Busqueda por grafos
@@ -208,9 +207,6 @@ function tiraMaquina(){
         ii = posibilidades[elegir];
         ficha = fichas_array[ii];
         ficha.pinta("O");
-
-        console.log("Jugada :"+ficha.ren+", "+ficha.col+" "+ficha.i);
-        console.log("-----------------");
 
         verifica(false);
         if(!gameOver){
@@ -325,12 +321,11 @@ function verificaDiagonal1(calculaPeso){
             fichas_X += (ficha.valor=="X"?1:0);
             fichas_O += (ficha.valor=="O"?1:0);
         }
-        console.log("D1:X"+fichas_X+", O:"+fichas_O);
+
         if(calculaPeso){
             for(i=0; i<RENGLONES; i++){
                 ficha = buscarFicha(i,i);
                 pesoFicha(ficha.i,fichas_O,fichas_X);
-                console.log("Ficha: "+ficha.i+" peso: "+ficha.peso);
             }
         }
         gameOver=verificaFin(fichas_O,fichas_X);
@@ -352,13 +347,12 @@ function verificaDiagonal2(calculaPeso){
             fichas_O += (ficha.valor=="O"?1:0);
             j--;
         }
-        console.log("D1:X"+fichas_X+", O:"+fichas_O);
+
         if(calculaPeso){
             j=2;
             for(i=0; i<RENGLONES; i++){
                 ficha=buscarFicha(i,j);
                 pesoFicha(ficha.i,fichas_O,fichas_X);
-                console.log("Ficha: "+ficha.i+" peso: "+ficha.peso);
                 j--;
             }
         }
