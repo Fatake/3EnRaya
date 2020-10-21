@@ -56,11 +56,10 @@ function posicion(){
 /**
  * Funcion que Dibuja el tablero
  */
-function dibujaGato(){
-    var n = 3;
-    tamC = Math.round(maxx/n);
+function dibujaTablero(){
+    tamC = Math.round(maxx/3);
     var i = 0;
-    for (i = 1; i < n ; i++){
+    for (i = 1; i < 3 ; i++){
         ctx.beginPath();
         ctx.moveTo(i*tamC, 0);
         ctx.lineTo(i*tamC, maxy);
@@ -69,16 +68,16 @@ function dibujaGato(){
         ctx.stroke();
     }
 
-    gato =new Array(n);
-    for (var i=0; i<n;i++){
-        gato[i] =new Array(n);
-        for (var j=0; j<n;j++){
+    gato = new Array(3);
+    for (var i=0 ; i<3 ; i++){
+        gato[i] = new Array(3);
+        for (var j=0 ; j<3 ; j++){
             gato[i][j]=0;
         }
     }    
 
-    for (var i=0; i<n;i++){
-        for (var j=0; j<n;j++){
+    for (var i=0; i<3;i++){
+        for (var j=0; j<3;j++){
             console.log(gato[i][j]);
         }
     }    
