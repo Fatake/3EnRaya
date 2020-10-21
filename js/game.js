@@ -21,7 +21,7 @@ var fichas_O    = 0;
 var largo       = 120;
 
 // Se carga la funcion iniciar el juego al cargar la pagina
-window.onload = iniciar;
+//window.onload = iniciar;
 
 /**
  * Funcion inciar el juego
@@ -409,7 +409,7 @@ function verificaFin(O,X){
         }
     }
 
-    if(fin){
+    if( fin ){
         canvas.addEventListener("click",iniciar,false);
     }
     return fin;
