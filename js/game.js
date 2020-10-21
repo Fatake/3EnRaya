@@ -1,18 +1,26 @@
-/* VARIABLES DEL JUEGO */
+/** Configuraciones */
 var ctx, canvas;
 var tiradas, gameOver;
 var fichas_array;
 
+// Anchos del tablero
 var ancho       = 800;
 var alto        = 480;
-var COLUMNAS    = 3;
-var RENGLONES   = 3;
-var fichas_X    = 0;
-var fichas_O    = 0;
-var largo       = 120;
+
+// Color del canvas
 var colorGato   = "black";
 var colorCanvas = "black";
 
+// Renglones y columnas
+var COLUMNAS    = 3;
+var RENGLONES   = 3;
+
+var fichas_X    = 0;
+var fichas_O    = 0;
+
+var largo       = 120;
+
+// Se carga la funcion iniciar el juego al cargar la pagina
 window.onload = iniciar;
 
 /**
@@ -30,6 +38,7 @@ function iniciar(){
             gameOver     = false;
             tiradas      = 0;
 
+            //Pinta el tablero
             gato();
             mensaje("Jugador1");
             canvas.addEventListener("click",selecciona,false);
