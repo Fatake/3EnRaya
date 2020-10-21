@@ -15,7 +15,9 @@ var colorCanvas = "black";
 
 window.onload = iniciar;
 
-/* INICIAR EL JUEGO */
+/**
+ * Funcion inciar el juego
+ */
 function iniciar(){
     canvas        = document.getElementById("gatoTablero");
     canvas.width  = ancho;
