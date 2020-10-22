@@ -127,10 +127,10 @@ function pintaFicha(valor){
  * @param {*} cadena 
  */
 function mensaje(cadena){
-    var lon=(canvas.width-(25*cadena.length))/2;
-    ctx.strokeStyle=colorGato;
+    var lon = (canvas.width-(25*cadena.length))/2;
+    ctx.strokeStyle = colorGato;
     ctx.clearRect(0,420,canvas.width,100);
-    ctx.font="bold 40px Courier";
+    ctx.font = "bold 40px Courier";
     ctx.fillText(cadena,lon,470);
 }
 
@@ -226,16 +226,16 @@ function pesoFicha(i,fichas_O,fichas_X){
     ficha = fichas_array[i];
     if(ficha.valor == ""){
         // Para ganar
-        if(fichas_O==2 && fichas_X==0){
-            if(ficha.peso<10) ficha.peso =10;
+        if(fichas_O==2 && fichas_X == 0){
+            if(ficha.peso<10) ficha.peso = 10;
         }
         // Para no perder
         else if(fichas_O == 0 && fichas_X==2){
-            if(ficha.peso< 6) ficha.peso =6;
+            if(ficha.peso< 6) ficha.peso = 6;
         }
         // Para intentar ganar
-        else if (fichas_O == 1 && fichas_X==0){
-            if(ficha.peso< 3) ficha.peso =3;
+        else if (fichas_O == 1 && fichas_X == 0){
+            if(ficha.peso< 3) ficha.peso = 3;
         // Para poner ficha sin importancia.
         }else{
             if(ficha.peso< 1) ficha.peso =1;
